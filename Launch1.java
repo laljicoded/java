@@ -58,20 +58,44 @@ class Umpire {
 
     }
 
-    void compare() {
-        if (numGuesser == numUser1) {
-            System.out.println("User:1 won the game ");
-        } else if (numGuesser == numUser2) {
-            System.out.println("User:2 won the game");
-        } else if (numGuesser == numUser3) {
+   void compare() {
+        if (numGuesser == numUser1) 
+        {
+                 if(numGuesser==numUser2 && numGuesser==numUser3){
+                     System.out.println("All Players Won");
+                 }
+                 else if(numGuesser==numUser2){
+                     System.out.println("Player 1 and player2 Won");
+                 }
+                 else if(numGuesser==numUser3){
+                     System.out.println("Player1 and Player3 Won ");
+                 }
+                 else{
+                     System.out.println("User:1 won the game ");
+                 }
+        }
+         else if (numGuesser == numUser2) 
+         {
+                 if(numGuesser==numUser3){
+                     System.out.println("Player2 and Player3 Won");
+                 }
+                 else{
+                     System.out.println("User:2 won the game");
+                 }
+            
+        } 
+        else if (numGuesser == numUser3)
+         {
+            
             System.out.println("User:3 won the game ");
 
-        } else {
+        } 
+        else 
+        {
             System.out.println("Lal Ji your Users Lost the Game");
         }
 
     }
-
 }
 
 // <....................Main Class....................................>
