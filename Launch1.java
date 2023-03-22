@@ -11,7 +11,7 @@ class Guesser {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Guess The Number ");
+        System.out.println("Guesser Guess The Number... ");
         guessNum = scan.nextInt();
         return guessNum;
     }
@@ -25,7 +25,8 @@ class Player {
     int guessingNumber() {
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Players Guess The NUmber ");
+        System.out.println("We have Three player to Guess the NUmber... ");
+        System.out.println("Players Guess The NUmber.... ");
         guessNum = scan.nextInt();
         return guessNum;
     }
