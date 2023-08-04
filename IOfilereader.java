@@ -7,7 +7,7 @@ public class IOfilereader {
     {
 
        try{
-        FileReader r=new FileReader("C:\\Users\\Hp\\Desktop\\lalji.txt");
+        FileReader r=new FileReader("you file location or file name");
 
         try
 
